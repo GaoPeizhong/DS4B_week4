@@ -1,0 +1,25 @@
+---
+title: "Week4_WS"
+author: "Peizhong Gao u7627348"
+date: "2023-08-17"
+output: html_document
+---
+##Task 1
+```{r}
+#input the data and name them
+flowcell <- read.csv("flowcell_A.csv")
+channel <- read.csv("two_flowcell_channel_summary.csv")
+```
+
+```{r}
+#download and library the skimr
+library(skimr)
+```
+
+```{r}
+#use function skim() to check the data
+skim(flowcell)
+skim(channel)
+```
+
+##Task 2
